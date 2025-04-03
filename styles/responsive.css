@@ -61,12 +61,6 @@
     padding: 15vh 5% 5% 5%;
 }
 
-.language-selector {
-    margin-top: 15px;
-    padding-top: 15px;
-    text-align: center;
-}
-
 .language-label {
     color: #FFD700;
     font-size: 0.9rem;
@@ -182,11 +176,18 @@
         height: auto;
         flex-direction: row;
         background-color: transparent;
+        width: auto;
+        flex-grow: 1;
+        overflow: visible;
+        padding: 0;
+        justify-content: center;
+        left: 0;
     }
 
     .nav-menu {
         flex-direction: row;
         gap: 20px;
+        width: auto;
     }
 
     .two-column-container {
