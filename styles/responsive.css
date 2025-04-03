@@ -57,6 +57,40 @@
     padding: 15vh 5% 5% 5%;
 }
 
+.language-selector {
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.language-label {
+    color: #FFD700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.language-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.language-option {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.language-option:hover,
+.language-option.active {
+    background-color: rgba(255, 215, 0, 0.2);
+}
+
 @media screen and (max-width: 1023px) {
     .section-title {
         font-size: 2.5rem;

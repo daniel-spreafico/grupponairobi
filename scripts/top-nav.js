@@ -42,4 +42,15 @@ document.addEventListener('DOMContentLoaded', function() {
             hamburger.classList.remove('active');
         });
     });
+
+    const path = window.location.pathname;
+    const langOptions = document.querySelectorAll('.language-option');
+
+    langOptions.forEach(option => {
+        const href = option.getAttribute('href');
+        if ((path.includes('/en/') && href.includes('/en/')) ||
+            (path.includes('/it/') && href.includes('/it/'))) {
+            option.classList.add('active');
+        }
+    });
 });
